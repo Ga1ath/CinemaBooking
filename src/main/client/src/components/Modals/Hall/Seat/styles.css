@@ -8,12 +8,25 @@
 
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .bought {
     background-color: #38383e;
 }
 
-.selected {
-    background-color: #1212f5;
+.seat.selected {
+    background-color: #1a83ff;
+}
+
+.seat:hover {
+    background-color: #dbdbdb;
+    cursor: default;
+}
+.seat.bought:hover {
+    background-color: #38383e;
+}
+
+.seat.selected:hover {
+    background-color: #1a83ff;
 }
