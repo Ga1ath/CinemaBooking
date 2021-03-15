@@ -16,18 +16,32 @@ const Hall = () => {
 		!event.path.includes(ref.current) && dispatch(hideHallPopup());
 	}
 
+	const preventScroll = (event) => {
+		event.preventDefault();
+	}
+
+	const changeOverflowBody = (state) => {
+		document.body.style.overflow = state;
+	}
+
 	useEffect(() => {
 		dispatch(getCurrentSession());
 
+
 		document.addEventListener('click', clickHandler);
+		changeOverflowBody("hidden");
+		document.addEventListener('touchmove', () => preventScroll(), false);
 		return () => {
 			document.removeEventListener('click', clickHandler);
+			changeOverflowBody("visible");
+			document.removeEventListener('touchmove', preventScroll, false);
 		}
 	}, [])
 
 
 	return (
 		<div ref={ref} className="hall">
+			<div className="screen"></div>
 			{seats.map((row, key) => {
 				return (
 					<Row row={row} id={key} />

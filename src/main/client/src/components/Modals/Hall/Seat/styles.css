@@ -1,19 +1,32 @@
 .seat {
     background-color: #e7e7ef;
-    height: 3vh;
-    width: 3vw;
+    height: 15px;
+    width: 24px;
     margin: 3px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .bought {
     background-color: #38383e;
 }
 
-.selected {
-    background-color: #1212f5;
+.seat.selected {
+    background-color: #1a83ff;
+}
+
+.seat:hover {
+    background-color: #a5a5a5;
+    cursor: pointer;
+}
+.seat.bought:hover {
+    background-color: #38383e;
+}
+
+.seat.selected:hover {
+    background-color: #1a83ff;
 }
