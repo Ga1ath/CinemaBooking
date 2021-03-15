@@ -21,7 +21,7 @@
 
 .seat:hover {
     background-color: #dbdbdb;
-    cursor: default;
+    cursor: pointer;
 }
 .seat.bought:hover {
     background-color: #38383e;

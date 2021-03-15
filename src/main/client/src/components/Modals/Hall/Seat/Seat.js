@@ -17,7 +17,7 @@ const Seat = ({ seat }) => {
     <div
       onClick={handleOnClick}
       className={`${isBooked ? 'seat bought' : 'seat'} ${isSelected ? 'selected' : ''}`}>
-      {name}
+      {/*{name}*/}
     </div>
   )
 };
