@@ -12,7 +12,7 @@ const Footer = () => {
         <Grid item>
           <Toolbar className={classes.toolbar}>
             <Typography variant="body1">
-              © 2021 PopugGang
+              © 2021 Cursach
             </Typography>
           </Toolbar>
         </Grid>
