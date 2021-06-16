@@ -59,7 +59,7 @@ const Navbar = () => {
 						<img src={logo} alt="icon" height="50" />
 					</Link>
 					<Typography className={classes.title} variant="h6">
-						&nbsp; (((CringeCinema)))
+						&nbsp; CinemaBooking
 					</Typography>
 					{
 						useLocation().pathname === "/" ?
